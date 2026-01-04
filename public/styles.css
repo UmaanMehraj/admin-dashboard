@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 2fr repeat(3, 3fr);
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr;
+  gap: 0.5rem;
+  background: rgb(25, 146, 212);
+  grid-area: 1/1/-1/2;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+}
+.navigation,
+.branding {
+  font-size: 1rem;
+  align-self: self-start;
+  padding: 1rem;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+.navigation {
+  display: grid;
+  gap: 1rem;
+}
+.branding {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}
+.search {
+  display: grid;
+  grid-template-columns: 2rem 30rem;
+  gap: 1rem;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  grid-area: 1/2/2/-1;
+}
+.misc,
+.info {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.info {
+  box-shadow: 20px 4px 0 0 rgba(0, 0, 0, 0.2), 18px 6px 0 0 rgba(0, 0, 0, 0.19);
+}
+
+.main {
+  grid-area: 2/2/-1/-1;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  background-color: rgb(225, 232, 240);
+  border: 2rem solid rgb(225, 232, 240);
+}
+
+.projects {
+  display: grid;
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+#project {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#project,
+.anouncements > p,
+.trending > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.anouncements {
+  display: grid;
+  gap: 1rem;
+}
+.anouncement,
+.trending {
+  display: grid;
+  gap: 2px;
+  background-color: white;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.cards,
+.card {
+  box-sizing: content-box;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card {
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+}
+
+input {
+  width: 500px;
+  height: 30px;
+  background-color: rgb(225, 232, 240);
+  border-radius: 10px;
+}
+.name {
+  font-weight: 650;
+}
+
+#dashboard {
+  height: 3rem;
+  width: 3rem;
+}
+
+#house,
+#pf,
+#msg,
+#hist,
+#tsk,
+#com,
+#set,
+#sup,
+#priv,
+#bell,
+#pfp,
+#mag {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#home,
+#profile,
+#messages,
+#history,
+#communities,
+#tasks,
+#settings,
+#support,
+#privacy {
+  display: grid;
+  grid-template-columns: 1.5rem 3rem;
+  gap: 2rem;
+}
+
+.greeting {
+  display: grid;
+  font-weight: 600;
+  justify-items: start;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#greet-pfp {
+  grid-row: 1/-1;
+}
+#bg-greet {
+  font-size: large;
+}
+
+#g-pfp {
+  width: 4rem;
+  height: 4rem;
+}
+
+.btn > button {
+  color: white;
+  text-align: center;
+  background-color: rgb(25, 146, 212);
+  height: 2rem;
+  width: 7rem;
+  border: 0px;
+  box-shadow: 1px 2px 1px black;
+  border-radius: 20px;
+}
